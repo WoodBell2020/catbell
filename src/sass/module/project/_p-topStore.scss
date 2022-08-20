@@ -1,0 +1,18 @@
+.p-topStore {
+	padding: rem(96) 0;
+}
+
+.p-topStore__subTitle {
+	margin-top: rem(24);
+}
+
+.p-topStore__mapContainer {
+	margin-top: rem(30);
+	@include mq(md) {
+		margin-top: rem(50);
+	}
+}
+
+.p-topStore__button {
+	margin: rem(40) auto 0;
+}

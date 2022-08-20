@@ -1,0 +1,22 @@
+@import 'inner';
+
+//ブレイクポイント
+$breakpoints: (
+	// sm: 375,
+	sm: 600,
+	md: 767,
+	lg: 1023,
+	inner: strip-unit($inner),
+	img: 1439,
+	xl: 1440
+);
+
+//メディアクエリー
+$mediaquerys: (
+	sm: "screen and (max-width: #{map-get($breakpoints,'sm')}px)",
+	md: "screen and (max-width: #{map-get($breakpoints,'md')}px)",
+	lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
+	inner: "screen and (max-width: #{map-get($breakpoints,'inner')}px)",
+	img: "screen and (max-width: #{map-get($breakpoints,'img')}px)",
+	xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+);

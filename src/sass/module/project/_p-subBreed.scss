@@ -1,0 +1,25 @@
+.p-subBreed {
+	padding-bottom: rem(96);
+}
+.p-subBreed__title {
+	margin-top: 1rem;
+}
+
+.p-subBreed__subTitle {
+	margin-top: 1.125rem;
+}
+
+.p-subBreed__lists1 {
+	margin-top: rem(38);
+}
+
+.p-subBreed__lists2 {
+	margin-top: rem(120);
+	@include mq(md) {
+		margin-top: rem(50);
+	}
+}
+
+.p-subBreed__button {
+	margin: rem(64) auto 0;
+}

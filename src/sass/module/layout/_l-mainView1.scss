@@ -1,0 +1,5 @@
+.l-mainView1 {
+	@include mq(md) {
+		padding-top: rem(78);
+	}
+}

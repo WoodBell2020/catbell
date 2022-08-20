@@ -1,0 +1,66 @@
+.p-shopInfo__title {
+	font-size: rem(28);
+	@include mq(md) {
+		font-size: rem(36);
+	}
+}
+
+.p-shopInfo__container {
+	display: flex;
+	align-items: stretch;
+	@include mq(md) {
+		flex-direction: column-reverse;
+	}
+}
+
+.p-shopInfo__container dl {
+	width: calc(50% - 1.5rem);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin-right: 3rem;
+	margin-top: rem(4);
+	color: #5d5d5d;
+	font-size: rem(16);
+	@include mq(md) {
+		width: 100%;
+		font-size: rem(21);
+	}
+}
+
+.p-shopInfo__container dl dt {
+	width: 25%;
+	margin-top: rem(16);
+	@include mq(md) {
+		margin-top: rem(21);
+	}
+}
+
+.p-shopInfo__container dl dd {
+	width: 75%;
+	margin-top: rem(16);
+	@include mq(md) {
+		margin-top: rem(21);
+	}
+}
+
+.p-shopInfo__map {
+	width: calc(50% - 1.5rem);
+	overflow: hidden;
+	position: relative;
+	// background-color: red;
+	@include mq(md) {
+		width: 100%;
+		height: calc(450 / 728 * 100vw);
+		margin-top: rem(20);
+	}
+}
+
+.p-shopInfo__map iframe {
+	position: absolute;
+	display: block;
+	top: -100%;
+	left: -100%;
+	width: 300%;
+	height: 300%;
+}

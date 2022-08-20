@@ -1,0 +1,12 @@
+.l-innerA {
+	max-width: rem(1030);
+	width: 100%;
+	padding-left: rem(25);
+	padding-right: rem(25);
+	padding-bottom: rem(96);
+	margin-left: auto;
+	margin-right: auto;
+	@include mq(md) {
+		padding-bottom: rem(64);
+	}
+}

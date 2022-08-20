@@ -1,0 +1,12 @@
+
+.p-sideCol__hashlists li{
+margin-top: rem(12);
+}
+.p-sideCol__hashlists li a{
+  font-size: rem(16);
+  font-weight: bold;
+  text-decoration: underline;
+  @include mq(md){
+    font-size: rem(21);
+  }
+}

@@ -1,0 +1,8 @@
+.c-blogName {
+	font-size: rem(28);
+	margin-top: rem(24);
+	@include mq(md) {
+		font-size: rem(36);
+		margin-top: rem(31);
+	}
+}

@@ -1,0 +1,39 @@
+.c-button01 {
+  display: block;
+  color: #ff5f32;
+  font-size: rem(18);
+  font-size: rem(18);
+  line-height: 3.23;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: bold;
+  width: rem(420);
+  width: rem(420);
+  background-color: #fff;
+  border: #ff5f32 1px solid;
+  border-radius: 30px;
+  position: relative;
+}
+
+.c-button01:hover {
+  opacity: 0.8;
+}
+
+.c-button01:after {
+  position: absolute;
+  content: '';
+  width: rem(12);
+  width: rem(12);
+  height: rem(12);
+  height: rem(12);
+  border: 0px;
+  border-top: solid 1px #ff5f32;
+  border-right: solid 1px #ff5f32;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 50%;
+  margin-top: rem(-6);
+  margin-top: rem(-6);
+  right: rem(20);
+  right: rem(20);
+}

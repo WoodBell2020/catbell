@@ -1,0 +1,16 @@
+@import './function/**';
+@import './setting/**';
+@import './base/**';
+@import './mixin/**';
+@import './plugin/**';
+@import './module/**';
+@import './page/**';
+
+// *,
+// *:before,
+// *:after {
+// 	outline: 1px solid magenta;
+// }
+body {
+	color: #2c2c2c;
+}

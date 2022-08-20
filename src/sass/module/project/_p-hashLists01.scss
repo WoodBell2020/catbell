@@ -1,0 +1,19 @@
+.p-hashLists01 {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	z-index: 3;
+}
+
+.p-hashLists01 li {
+	margin-right: rem(12);
+	margin-bottom: rem(12);
+}
+
+.p-hashLists01 li a {
+	color: #2c2c2c;
+	text-decoration: underline;
+	@include mq(md) {
+		font-size: rem(18);
+	}
+}

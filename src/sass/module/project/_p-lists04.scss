@@ -1,0 +1,138 @@
+.p-lists04__lists > li {
+	display: flex;
+	padding: rem(48) 0;
+	border-bottom: 1px solid #e7e7e7;
+	position: relative;
+	@include mq(md) {
+		flex-direction: column;
+	}
+}
+
+.p-lists04__imgBoxA {
+	// width: rem(264);
+	width: 38.596491%;
+	border-radius: 10px;
+	margin-right: rem(24);
+	display: flex;
+	align-items: center;
+	// position: relative;
+	@include mq(md) {
+		width: 100%;
+		height: calc(450 / 728 * 100vw);
+	}
+}
+
+// .p-lists04__imgBoxA:before {
+// 	padding-top: 75.757575%;
+// 	content: '';
+// 	display: block;
+// }
+
+.p-lists04__imgBoxA img {
+	// position: absolute;
+	border-radius: 10px;
+	object-fit: contain;
+	object-position: center;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: 100%;
+	align-self: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.p-lists04__imgBoxB {
+	// width: rem(264);
+	width: 38.596491%;
+	border-radius: 10px;
+	margin-right: rem(24);
+	position: relative;
+	@include mq(md) {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+.p-lists04__imgBoxB:before {
+	padding-top: 38%;
+	content: '';
+	display: block;
+}
+
+.p-lists04__imgBoxB img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 10px;
+	object-fit: cover;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.p-lists04__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 1;
+	// max-width: rem(396);
+	@include mq(md) {
+		margin-top: rem(30);
+	}
+}
+
+.p-lists04__info time {
+	font-size: rem(12);
+	line-height: 1.5;
+	color: #9b9b9b;
+	@include mq(md) {
+		font-size: rem(16);
+	}
+}
+
+.p-lists04__title {
+	display: block;
+	font-size: rem(20);
+	font-weight: bold;
+	line-height: 1.5;
+	color: #2c2c2c;
+	margin-top: rem(14);
+	@include mq(md) {
+		font-size: rem(26);
+		margin-top: rem(19);
+	}
+}
+
+.p-lists04__title:before {
+	position: absolute;
+	display: block;
+	content: '';
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.p-lists04__excerpt {
+	font-size: rem(12);
+	line-height: 1.5;
+	color: #5d5d5d;
+	margin-top: rem(8);
+	@include mq(md) {
+		font-size: rem(18);
+		margin-top: rem(11);
+	}
+}
+
+.p-lists04__hash {
+	margin-top: rem(18);
+	z-index: 3;
+	@include mq(md) {
+		font-size: rem(18);
+	}
+}

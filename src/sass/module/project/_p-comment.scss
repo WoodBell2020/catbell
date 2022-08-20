@@ -1,0 +1,39 @@
+.p-comment {
+	padding: 3.375rem 2.5rem 1.875rem;
+	background-color: #fafafa;
+	box-sizing: padding-box;
+	font-size: 0.875rem;
+}
+
+.p-comment__title {
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 2;
+	border-bottom: 1px solid #5d5d5d;
+	@include mq(md) {
+		font-size: rem(21);
+	}
+}
+
+.p-comment p{
+	@include mq(md){
+		font-size: rem(18);
+	}
+}
+
+.p-comment__editor {
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+.p-comment__annotation {
+	margin-top: 1.25rem;
+}
+
+.p-comment__present,
+.p-comment__receiving,
+.p-comment__payment,
+.p-comment__others {
+	text-indent: 1em;
+	margin-top: 1.25rem;
+}

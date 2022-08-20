@@ -1,0 +1,44 @@
+.p-hamburger {
+	width: rem(50);
+	height: rem(50);
+	vertical-align: middle;
+	position: relative;
+	z-index: 100;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+.p-hamburger span {
+	position: absolute;
+	left: 0;
+	transform: translateY(-50%);
+	display: block;
+	width: 100%;
+	height: 2px;
+	border-radius: 2px;
+	background-color: #ff5f32;
+	transition: all ease 0.3s;
+}
+
+.p-hamburger span:nth-of-type(1) {
+	top: 25%;
+}
+.p-hamburger span:nth-of-type(2) {
+	top: 50%;
+}
+.p-hamburger span:nth-of-type(3) {
+	top: 75%;
+}
+
+.p-hamburger.open span:nth-of-type(1) {
+	transform: rotate(-45deg);
+	top: 45%;
+}
+.p-hamburger.open span:nth-of-type(2) {
+	background-color: transparent;
+	top: 50%;
+}
+.p-hamburger.open span:nth-of-type(3) {
+	transform: rotate(45deg);
+	top: 45%;
+}

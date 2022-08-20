@@ -1,0 +1,28 @@
+.c-storeMapButton {
+	position: absolute;
+	display: inline-block;
+	font-size: rem(18);
+	// font-size: calc(18 / 1200 * 100vw);
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: rem(48);
+	// line-height: calc(48 / 1200 * 100vw);
+	text-align: center;
+	color: #fff;
+	// width: rem(144);
+	width: calc(144 / 1200 * 100vw);
+	max-width: rem(144);
+	// height: rem(48);
+	height: calc(48 / 1200 * 100vw);
+	max-height: rem(48);
+	background-color: #ff5f32;
+	border-radius: 24px;
+	box-shadow: 0 1px 1px #0000001a;
+	border: 1px solid #fff;
+	@include mq(md) {
+		font-size: calc(18 / 767 * 100vw);
+		line-height: calc(48 / 767 * 100vw);
+		width: calc(144 / 767 * 100vw);
+		height: calc(48 / 767 * 100vw);
+	}
+}

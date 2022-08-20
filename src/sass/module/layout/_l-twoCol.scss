@@ -1,0 +1,8 @@
+.l-twoCol{
+  display: flex;
+  align-items: flex-start;
+  margin-top: rem(16);
+  @include mq(md){
+    flex-direction: column;
+  }
+}

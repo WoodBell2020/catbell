@@ -1,0 +1,46 @@
+.p-swiperBox {
+	width: 59.6%;
+	@include mq(md) {
+		width: 100%;
+	}
+}
+.swiper-slide {
+	border-radius: 10px;
+}
+.swiper-slide img {
+	border-radius: 10px;
+	width: 100%;
+	object-fit: cover;
+}
+.main-sldier {
+	height: calc(384 / 1200 * 100vw);
+	max-height: rem(384);
+	@include mq(md) {
+		height: calc(384 / 767 * 100vw);
+		max-height: rem(768);
+	}
+}
+.main-sldier img {
+	height: 100%;
+	object-fit: cover;
+}
+.thumbnail-slide {
+	position: relative;
+}
+.thumbnail-slide:before {
+	content: '';
+	display: block;
+	padding-top: 100%;
+}
+.thumbnail-slide img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.thumbnail-sldier {
+	margin-top: 1rem;
+}

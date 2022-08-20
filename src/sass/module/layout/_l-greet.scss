@@ -1,0 +1,6 @@
+.l-greet {
+	margin-top: rem(48);
+	@include mq(md) {
+		padding-bottom: rem(50);
+	}
+}

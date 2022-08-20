@@ -1,0 +1,70 @@
+.p-greet__title {
+	font-size: rem(28);
+	font-weight: 600;
+	@include mq(md) {
+		font-size: rem(36);
+	}
+}
+
+.p-greetContainer {
+	margin-top: rem(24);
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	@include mq(md) {
+		flex-direction: column;
+	}
+}
+
+.p-greet__imgBox {
+	width: calc(50% - 1rem);
+	position: relative;
+	border-radius: 20px;
+	@include mq(md) {
+		width: 100%;
+	}
+}
+
+.p-greet__imgBox:before {
+	content: '';
+	display: block;
+	padding-top: 61.804697%;
+}
+
+.p-greet__imgBox img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+.p-greet__txtBox {
+	width: calc(50% - 1rem);
+	@include mq(md) {
+		width: 100%;
+		margin-top: rem(20);
+	}
+}
+
+.p-greet__txtHead {
+	font-size: rem(20);
+	font-weight: 600;
+	@include mq(md) {
+		font-size: rem(26);
+	}
+}
+
+.p-greet__txtContent {
+	font-size: rem(16);
+	color: #9b9b9b;
+	margin-top: rem(16);
+	@include mq(md) {
+		font-size: rem(21);
+		margin-top: rem(21);
+	}
+}

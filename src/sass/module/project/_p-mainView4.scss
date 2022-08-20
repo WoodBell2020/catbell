@@ -1,0 +1,28 @@
+.p-mainView4 {
+	width: calc(980 / 1030 * 100vw);
+	max-width: rem(980);
+	height: calc(400 / 1030 * 100vw);
+	max-height: rem(400);
+	border-radius: 20px;
+	margin-top: 1rem;
+	// position: absolute;
+	// top: rem(158);
+	// left: 50%;
+	// transform: translateX(-50%);
+	@include mq(md) {
+		width: 100%;
+		height: calc(450 / 728 * 100vw);
+	}
+}
+
+.p-mainView4 img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: 100%;
+	object-fit: contain;
+	object-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+}

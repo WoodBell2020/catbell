@@ -1,0 +1,93 @@
+.p-catinfo {
+	width: auto;
+}
+
+.p-catinfo__breed {
+	font-size: rem(24);
+	@include mq(md) {
+		font-size: rem(31);
+	}
+}
+
+.p-catinfo__birthday {
+	font-size: rem(14);
+	color: $text-color2;
+	margin-top: rem(22);
+}
+.p-catinfo__birthday span:first-of-type {
+	margin-right: rem(16);
+}
+
+.p-catinfo__gender {
+	font-size: rem(14);
+	color: $text-color2;
+	margin-top: rem(12);
+}
+
+.p-catinfo dl {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: rem(22);
+}
+.p-catinfo dl > dt {
+	// width: 15.73%;
+	width: 20%;
+	font-size: rem(14);
+	color: $text-color2;
+	@include mq(md) {
+		font-size: rem(19);
+	}
+}
+.p-catinfo dl > dd {
+	width: 80%;
+	font-size: rem(14);
+	color: $text-color2;
+	@include mq(md) {
+		font-size: rem(19);
+	}
+}
+
+.p-catinfo dl > dt:not(:first-of-type),
+.p-catinfo dl > dd:not(:first-of-type) {
+	margin-top: rem(12);
+}
+
+.p-catinfo__price {
+	font-size: rem(20);
+	font-weight: bold;
+	color: $text-color0;
+}
+
+.p-catinfo__linktolist {
+	display: inline-block;
+	font-size: rem(14);
+	font-weight: bold;
+	color: $text-color0;
+	margin-top: rem(32);
+	position: relative;
+	@include mq(md) {
+		font-size: rem(19);
+	}
+}
+
+.p-catinfo__linktolist:after {
+	position: absolute;
+	top: 50%;
+	right: (-1.5em);
+	transform: translate(-50%, -50%) rotate(-45deg);
+	display: block;
+	content: '';
+	width: rem(10);
+	max-width: rem(10);
+	height: rem(10);
+	max-height: rem(10);
+	border-right: 1px solid $text-color0;
+	border-bottom: 1px solid $text-color0;
+	@include mq(md) {
+		width: (14 / 748 * 100vw);
+		max-width: rem(14);
+		height: (14 / 748 * 100vw);
+		max-height: rem(14);
+	}
+}

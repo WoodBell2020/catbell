@@ -1,0 +1,10 @@
+.p-lists06 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.p-lists06__card + .p-lists06__card {
+	@include mq(md) {
+		margin-top: rem(30);
+	}
+}

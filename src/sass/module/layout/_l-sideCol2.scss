@@ -1,0 +1,12 @@
+.l-sideCol2 {
+	display: block;
+	width: 18.97551%;
+	height: 100%;
+	margin-left: rem(55);
+	// background-color: blue;
+	@include mq(md){
+		width: 100%;
+		margin-left: 0;
+		margin-top: rem(80);
+	}
+}

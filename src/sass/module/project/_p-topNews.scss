@@ -1,0 +1,29 @@
+.p-topNews__container {
+	display: flex;
+	padding: rem(40) rem(40) rem(12) rem(40);
+	background-color: rgba($color: #fff, $alpha: 0.7);
+	border-radius: 16px;
+	@include mq(md) {
+		flex-direction: column;
+		padding: rem(25) rem(40) rem(25) rem(60);
+	}
+}
+
+.p-topNews__title {
+	font-size: rem(18);
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: 0.01111em;
+	color: #ff5f32;
+	@include mq(md) {
+		font-size: rem(22);
+	}
+}
+
+.p-topNews__lists {
+	margin-left: rem(32);
+	@include mq(md) {
+		margin-left: 0;
+		margin-top: rem(30);
+	}
+}

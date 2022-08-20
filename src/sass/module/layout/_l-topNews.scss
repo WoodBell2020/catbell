@@ -1,0 +1,8 @@
+.l-topNews {
+	margin-top: rem(-120);
+	position: relative;
+	z-index: 40;
+	@include mq(md) {
+		margin-top: rem(20);
+	}
+}

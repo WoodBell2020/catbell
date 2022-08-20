@@ -1,0 +1,14 @@
+//デスクトップのみ表示
+.u-desktop {
+  display: none;
+  @include mq("lg") {
+    display: block;
+  }
+}
+
+//モバイルのみ表示
+.u-mobile {
+  @include mq("lg") {
+    display: none;
+  }
+}

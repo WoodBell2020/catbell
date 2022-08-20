@@ -1,0 +1,24 @@
+.p-sideCol__title {
+	font-size: rem(20);
+	font-weight: bold;
+	line-height: 1.5;
+	color: #2c2c2c;
+	@include mq(md){
+		font-size: rem(30);
+	}
+}
+
+.p-sideCol__lists {
+	margin-top: rem(-30);
+	@include mq(md){
+		margin-top: 0;
+	}
+}
+
+.p-sideCol__hashBox {
+	margin-top: rem(102);
+}
+
+.p-sideCol__hashlists{
+	margin-top: rem(30);
+}

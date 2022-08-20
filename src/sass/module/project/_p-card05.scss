@@ -1,0 +1,86 @@
+.p-card05 {
+	width: calc(50% - 1.5rem);
+	@include mq(md) {
+		width: 100%;
+	}
+}
+
+.p-card05--link {
+	display: block;
+}
+
+.p-card05:not(:nth-of-type(2n)) {
+	margin-right: 3rem;
+	@include mq(md) {
+		margin-right: 0;
+	}
+}
+.p-card05:nth-of-type(n + 3) {
+	margin-top: rem(48);
+}
+
+.p-card05:nth-of-type(n + 1) {
+	@include mq(md) {
+		margin-top: rem(48);
+	}
+}
+
+.p-card05__imgBox {
+	width: 100%;
+	position: relative;
+	border-radius: 20px;
+}
+.p-card05__imgBox::before {
+	content: '';
+	display: block;
+	padding-top: 50%;
+}
+.p-card05__imgBox img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.p-card05__info {
+	margin-top: rem(24);
+}
+
+.p-card05__name {
+	font-size: rem(20);
+	font-weight: 700;
+	color: #2c2c2c;
+	@include mq (md){
+		font-size: rem(26);
+	}
+}
+
+.p-card05__info dl {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	font-size: rem(14);
+	color: #5d5d5d;
+	margin-top: rem(16);
+	@include mq(md){
+		font-size: rem(21);
+	}
+}
+
+.p-card05__info dl dt {
+	width: 20%;
+}
+
+.p-card05__info dl dd {
+	width: 80%;
+}
+
+.p-card05__info dl dt:not(:first-of-type),
+.p-card05__info dl dd:not(:first-of-type) {
+	margin-top: rem(10);
+}

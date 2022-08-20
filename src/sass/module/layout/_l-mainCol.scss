@@ -1,0 +1,8 @@
+.l-mainCol{
+  width: 69.79591%;
+  margin-right: rem(55);
+  @include mq(md){
+    width: 100%;
+    margin-right: 0;
+  }
+}

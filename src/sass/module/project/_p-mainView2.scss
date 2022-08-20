@@ -1,0 +1,16 @@
+.p-mainView2 {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	@include mq(md){
+		flex-direction: column;
+	}
+}
+
+.p-mainView2__swiper{
+margin-right: 2.5rem;
+}
+
+.p-mainView2__info{
+  margin-top: 1.25rem;
+}

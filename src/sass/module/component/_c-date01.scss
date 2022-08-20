@@ -1,0 +1,7 @@
+.c-date01{
+  font-size: rem(12);
+  color: #9B9B9B;
+  @include mq(md){
+    font-size: rem(16);
+  }
+}

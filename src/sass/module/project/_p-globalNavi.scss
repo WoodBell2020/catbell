@@ -1,0 +1,45 @@
+.p-globalNavi__Box {
+	height: inherit;
+	display: flex;
+	@include mq(md) {
+		flex-direction: column;
+	}
+}
+
+.p-globalNavi__Item {
+	height: inherit;
+	@include mq(md) {
+		padding-top: rem(50);
+	}
+}
+
+.p-globalNavi {
+	height: inherit;
+}
+
+.p-globalNavi__Item a {
+	display: grid;
+	height: inherit;
+	font-size: rem(14);
+	font-weight: 500;
+	place-items: center;
+	&:hover {
+		background-color: rgba(255, 95, 50, 1);
+		opacity: 1;
+		color: #fff;
+	}
+	@include mq(md) {
+		font-size: rem(28);
+	}
+}
+
+.p-globalNavi__Item--header a {
+	padding: rem(55) rem(28) rem(28);
+	@include mq(md) {
+		padding: rem(30) rem(28) rem(30);
+	}
+}
+
+.p-globalNavi__Item--footer a {
+	padding: 0 rem(28);
+}
